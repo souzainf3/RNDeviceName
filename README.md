@@ -1,6 +1,7 @@
 # RNDeviceName
 
 Swift library to get Apple device model name.
+
 Gets the marketing name from Apple devices, such as "iPhone 13 mini.
 
 
