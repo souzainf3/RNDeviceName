@@ -7,6 +7,14 @@
 import Foundation
 
 /// Reference: https://www.theiphonewiki.com/wiki/Models
+/*
+ - List of Device Models, need to use SQLite to view the traits databases
+ - Online SQLite Viewer https://inloop.github.io/sqlite-viewer/
+ 
+ /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/standalone/device_traits.db
+ /Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/usr/standalone/device_traits.db
+ /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/usr/standalone/device_traits.db
+*/
 
 // MARK: - iPhone
 

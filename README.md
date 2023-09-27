@@ -56,3 +56,12 @@ https://support.apple.com/en-us/HT201296 (iPhone)
 https://support.apple.com/en-us/HT201471 (iPad)
 https://support.apple.com/en-us/HT200008 (AppleTV)
 https://www.theiphonewiki.com/wiki/Models#iPad (Unofficial) 
+
+- List of Device Models, need to use SQLite to view the traits databases
+- Online SQLite Viewer https://inloop.github.io/sqlite-viewer/
+ 
+``` 
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/standalone/device_traits.db
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/usr/standalone/device_traits.db
+/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/usr/standalone/device_traits.db
+```
