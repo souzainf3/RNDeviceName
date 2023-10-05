@@ -1,8 +1,8 @@
 # RNDeviceName
 
-Swift library to get Apple device model name.
+Micro library in Swift to get Apple device model name.
 
-Gets the marketing name from Apple devices, such as "iPhone 13 mini.
+Gets the marketing name from Apple devices, such as "iPhone 13 mini".
 
 
 ## Installation
@@ -23,7 +23,7 @@ Once you have your Swift package set up,
 1. Add `RNDeviceName` to the `dependencies` value of your `Package.swift`.
 ```swift
 dependencies: [
-    .package(url: "https://github.com/souzainf3/RNDeviceName.git", .upToNextMajor(from: "1.0.0")) // set you tag or branch
+    .package(url: "https://github.com/souzainf3/RNDeviceName.git", .upToNextMajor(from: "1.1.0")) // set you tag or branch
 ]
 ```
 
@@ -37,31 +37,30 @@ For version, you may use tags or master branch.
 
 
 ## Usage
-Gets Apple device marketing name, such as "iPhone 13 mini"
 
 ### UIDevice extension
 
 ```swift
-UIDevice.current.marketingName // iPhone 13 Mini
+UIDevice.current.marketingName // such as `iPhone 13 mini`
 ```
 
 ### Device class
 
 ```swift
-Device.current.marketingName // iPhone 13 Mini
+Device.current.marketingName // such as `iPhone 13 mini`
 ```
 
 
 ## References:
-https://support.apple.com/en-us/HT201296 (iPhone)
-https://support.apple.com/en-us/HT201471 (iPad)
-https://support.apple.com/en-us/HT200008 (AppleTV)
-https://www.theiphonewiki.com/wiki/Models#iPad (Unofficial) 
+- https://support.apple.com/en-us/HT201296 (iPhone)
+- https://support.apple.com/en-us/HT201471 (iPad)
+- https://support.apple.com/en-us/HT200008 (AppleTV)
+- https://www.theiphonewiki.com/wiki/Models#iPad (Unofficial) 
 
-- List of Device Models, need to use SQLite to view the traits databases
-- Online SQLite Viewer https://inloop.github.io/sqlite-viewer/
- 
-``` 
+List of Device Models, need to use SQLite to view the traits databases
+> Online SQLite Viewer https://inloop.github.io/sqlite-viewer/```
+
+```
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/standalone/device_traits.db
 /Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/usr/standalone/device_traits.db
 /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/usr/standalone/device_traits.db
