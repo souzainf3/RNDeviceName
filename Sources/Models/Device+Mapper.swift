@@ -20,13 +20,7 @@ import Foundation
 
 extension Device.iPhone: DeviceFamily {
     static var devices: [Model] {
-        [(.iPhone4, ["iPhone3,1", "iPhone3,2", "iPhone3,3"]),
-         (.iPhone4S, ["iPhone4,1"]),
-         (.iPhone5, ["iPhone5,1", "iPhone5,2"]),
-         (.iPhone5S, ["iPhone6,1", "iPhone6,2"]),
-         (.iPhone5C,  ["iPhone5,3", "iPhone5,4"]),
-         (.iPhone6, ["iPhone7,2"]),
-         (.iPhone6Plus, ["iPhone7,1"]),
+        [(.iPhone6Plus, ["iPhone7,1"]),
          (.iPhone6S, ["iPhone8,1"]),
          (.iPhone6SPlus, ["iPhone8,2"]),
          (.iPhoneSE, ["iPhone8,4"]),
@@ -58,7 +52,14 @@ extension Device.iPhone: DeviceFamily {
          (.iPhone15, ["iPhone15,4"]),
          (.iPhone15Plus, ["iPhone15,5"]),
          (.iPhone15Pro, ["iPhone16,1"]),
-         (.iPhone15ProMax, ["iPhone16,2"])]
+         (.iPhone15ProMax, ["iPhone16,2"]),
+
+         /// iPhone 16
+         (.iPhone16Pro, ["iPhone17,1"]),
+         (.iPhone16ProMax, ["iPhone17,2"]),
+         (.iPhone16, ["iPhone17,3"]),
+         (.iPhone16Plus, ["iPhone17,4"])
+        ]
     }
 }
 
@@ -67,13 +68,7 @@ extension Device.iPhone: DeviceFamily {
 
 extension Device.iPod: DeviceFamily {
     static var devices: [Model] {
-        [(.iPod1, ["iPod1,1"]),
-         (.iPod2, ["iPod2,1"]),
-         (.iPod3, ["iPod3,1"]),
-         (.iPod4, ["iPod4,1"]),
-         (.iPod5, ["iPod5,1"]),
-         (.iPod6, ["iPod7,1"]),
-         (.iPod7, ["iPod9,1"])]
+        [(.iPod7, ["iPod9,1"])]
     }
 }
 
@@ -144,7 +139,10 @@ extension Device.iPadPro: DeviceFamily {
          (.iPadPro11Inch3, ["iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7"]),
          (.iPadPro12Inch5, ["iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11"]),
          (.iPadPro11Inch4, ["iPad14,3", "iPad14,4"]),
-         (.iPadPro12Inch6, ["iPad14,5", "iPad14,6"])]
+         (.iPadPro12Inch6, ["iPad14,5", "iPad14,6"]),
+         (.iPadPro11InchM2, ["iPad14,8", "iPad14,9"]),
+         (.iPadPro11InchM4, ["iPad16,3-A", "iPad16,3-B", "iPad16,4-A", "iPad16,4-B"]),
+         (.iPadPro13InchM4, ["iPad16,5-A", "iPad16,5-B", "iPad16,6-A", "iPad16,6-B"])]
     }
 }
 

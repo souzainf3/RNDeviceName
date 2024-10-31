@@ -65,8 +65,13 @@ extension Device {
         case iPhone15Plus       = "iPhone 15 Plus"
         case iPhone15Pro        = "iPhone 15 Pro"
         case iPhone15ProMax     = "iPhone 15 Pro Max"
+        /// iPhone 16
+        case iPhone16Pro        = "iPhone 16 Pro"
+        case iPhone16ProMax     = "iPhone 16 Pro Max"
+        case iPhone16           = "iPhone 16"
+        case iPhone16Plus       = "iPhone 16 Plus"
     }
-    
+       
     
     // MARK: - iPad
     
@@ -117,6 +122,9 @@ extension Device {
         case iPadPro12Inch5     = "iPad Pro (12.9-inch) (5th generation)"
         case iPadPro11Inch4     = "iPad Pro (11-inch) (4th generation)"
         case iPadPro12Inch6     = "iPad Pro (12.9-inch) (6th generation)"
+        case iPadPro11InchM2    = "iPad Pro 11-inch (M2)"
+        case iPadPro11InchM4    = "iPad Pro 11-inch (M4)"
+        case iPadPro13InchM4    = "iPad Pro 13-inch (M4)"
     }
     
     
