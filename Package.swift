@@ -1,12 +1,12 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 6.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "RNDeviceName",
-    platforms: [.iOS(.v11),
-                .tvOS(.v11)],
+    platforms: [.iOS(.v14),
+                .tvOS(.v14)],
     products: [
         .library(
             name: "RNDeviceName",
@@ -22,5 +22,5 @@ let package = Package(
             dependencies: ["RNDeviceName"],
             path: "Tests"),
     ],
-    swiftLanguageVersions: [.v5]
+    swiftLanguageModes: [.v6]
 )
