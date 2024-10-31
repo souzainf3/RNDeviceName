@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RNDeviceName"
-  s.version      = "1.1.0"
+  s.version      = "2.0.0"
   s.summary      = "Swift library to get Apple device model name."
 
   s.description  = <<-DESC
