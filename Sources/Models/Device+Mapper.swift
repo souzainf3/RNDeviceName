@@ -20,8 +20,7 @@ import Foundation
 
 extension Device.iPhone: DeviceFamily {
     static var devices: [Model] {
-        [(.iPhone6Plus, ["iPhone7,1"]),
-         (.iPhone6S, ["iPhone8,1"]),
+        [(.iPhone6S, ["iPhone8,1"]),
          (.iPhone6SPlus, ["iPhone8,2"]),
          (.iPhoneSE, ["iPhone8,4"]),
          (.iPhone7, ["iPhone9,1", "iPhone9,3"]),
@@ -58,7 +57,8 @@ extension Device.iPhone: DeviceFamily {
          (.iPhone16Pro, ["iPhone17,1"]),
          (.iPhone16ProMax, ["iPhone17,2"]),
          (.iPhone16, ["iPhone17,3"]),
-         (.iPhone16Plus, ["iPhone17,4"])
+         (.iPhone16Plus, ["iPhone17,4"]),
+         (.iPhone16e, ["iPhone17,5"])
         ]
     }
 }

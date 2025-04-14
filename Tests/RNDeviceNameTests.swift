@@ -29,6 +29,7 @@ import Testing
         validate(.iPhone16ProMax, identifiers: ["iPhone17,2"])
         validate(.iPhone16, identifiers: ["iPhone17,3"])
         validate(.iPhone16Plus, identifiers: ["iPhone17,4"])
+        validate(.iPhone16e, identifiers: ["iPhone17,5"])
     }
 }
 
