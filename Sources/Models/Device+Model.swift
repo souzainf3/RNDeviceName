@@ -12,12 +12,6 @@ extension Device {
     // MARK: - iPod
     
     enum iPod : String, DeviceType {
-        case iPod1 = "iPod touch"
-        case iPod2 = "iPod touch (2nd generation)"
-        case iPod3 = "iPod touch (3rd generation)"
-        case iPod4 = "iPod touch (4th generation)"
-        case iPod5 = "iPod touch (5th generation)"
-        case iPod6 = "iPod touch (6th generation)"
         case iPod7 = "iPod touch (7th generation)"
     }
     
@@ -26,41 +20,45 @@ extension Device {
     
     /// https://support.apple.com/en-us/HT201296
     enum iPhone : String, DeviceType {
-        case iPhone4            = "iPhone 4"
-        case iPhone4S           = "iPhone 4S"
-        case iPhone5            = "iPhone 5"
-        case iPhone5S           = "iPhone 5S"
-        case iPhone5C           = "iPhone 5C"
-        case iPhone6            = "iPhone 6"
-        case iPhone6Plus        = "iPhone 6 Plus"
+        /// iPhone 6s
         case iPhone6S           = "iPhone 6S"
         case iPhone6SPlus       = "iPhone 6S Plus"
+        /// iPhone SE
         case iPhoneSE           = "iPhone SE"
+        /// iPhone 7
         case iPhone7            = "iPhone 7"
         case iPhone7Plus        = "iPhone 7 Plus"
+        /// iPhone 8
         case iPhone8            = "iPhone 8"
         case iPhone8Plus        = "iPhone 8 Plus"
+        /// iPhone X
         case iPhoneX            = "iPhone X"
         case iPhoneXS           = "iPhone XS"
         case iPhoneXSMax        = "iPhone XS Max"
         case iPhoneXR           = "iPhone XR"
+        /// iPhone 11
         case iPhone11           = "iPhone 11"
         case iPhone11Pro        = "iPhone 11 Pro"
         case iPhone11ProMax     = "iPhone 11 Pro Max"
+        /// iPhone SE2
         case iPhoneSE2          = "iPhone SE (2nd generation)"
+        /// iPhone 12
         case iPhone12Mini       = "iPhone 12 Mini"
         case iPhone12           = "iPhone 12"
         case iPhone12Pro        = "iPhone 12 Pro"
         case iPhone12ProMax     = "iPhone 12 Pro Max"
+        /// iPhone 13
         case iPhone13Mini       = "iPhone 13 Mini"
         case iPhone13           = "iPhone 13"
         case iPhone13Pro        = "iPhone 13 Pro"
         case iPhone13ProMax     = "iPhone 13 Pro Max"
         case iPhoneSE3          = "iPhone SE (3rd generation)"
+        /// iPhone 14
         case iPhone14           = "iPhone 14"
         case iPhone14Plus       = "iPhone 14 Plus"
         case iPhone14Pro        = "iPhone 14 Pro"
         case iPhone14ProMax     = "iPhone 14 Pro Max"
+        /// iPhone 15
         case iPhone15           = "iPhone 15"
         case iPhone15Plus       = "iPhone 15 Plus"
         case iPhone15Pro        = "iPhone 15 Pro"
