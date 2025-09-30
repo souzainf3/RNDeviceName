@@ -58,7 +58,13 @@ extension Device.iPhone: DeviceFamily {
          (.iPhone16ProMax, ["iPhone17,2"]),
          (.iPhone16, ["iPhone17,3"]),
          (.iPhone16Plus, ["iPhone17,4"]),
-         (.iPhone16e, ["iPhone17,5"])
+         (.iPhone16e, ["iPhone17,5"]),
+         
+         /// iPhone 17
+         (.iPhone17Pro, ["iPhone18,1"]),
+         (.iPhone17ProMax, ["iPhone18,2"]),
+         (.iPhone17, ["iPhone18,3"]),
+         (.iPhoneAir, ["iPhone18,4"])
         ]
     }
 }
