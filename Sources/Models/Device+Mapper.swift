@@ -59,12 +59,22 @@ extension Device.iPhone: DeviceFamily {
          (.iPhone16, ["iPhone17,3"]),
          (.iPhone16Plus, ["iPhone17,4"]),
          (.iPhone16e, ["iPhone17,5"]),
+
+         /// iPhone 17e
+         (.iPhone17e, ["iPhone18,5"]),
          
          /// iPhone 17
          (.iPhone17Pro, ["iPhone18,1"]),
          (.iPhone17ProMax, ["iPhone18,2"]),
          (.iPhone17, ["iPhone18,3"]),
-         (.iPhoneAir, ["iPhone18,4"])
+         (.iPhoneAir, ["iPhone18,4"]),
+
+         /// iPhone 18 Pro
+         (.iPhone18Pro, ["iPhone19,2"]),
+         (.iPhone18ProMax, ["iPhone19,3", "iPhone19,7"]),
+
+         /// Upcoming iPhone listed by AppleDB
+         (.iPhoneDuo, ["iPhone19,4"])
         ]
     }
 }
@@ -107,7 +117,8 @@ extension Device.iPad: DeviceFamily {
          (.iPad7, ["iPad7,11", "iPad7,12"]),
          (.iPad8, ["iPad11,6", "iPad11,7"]),
          (.iPad9, ["iPad12,1", "iPad12,2"]),
-         (.iPad10, ["iPad13,18", "iPad13,19"])]
+         (.iPad10, ["iPad13,18", "iPad13,19"]),
+         (.iPadA16, ["iPad15,7", "iPad15,8"])]
     }
 }
 
@@ -117,7 +128,13 @@ extension Device.iPadAir: DeviceFamily {
          (.iPadAir2, ["iPad5,3", "iPad5,4"]),
          (.iPadAir3, ["iPad11,3", "iPad11,4"]),
          (.iPadAir4, ["iPad13,1", "iPad13,2"]),
-         (.iPadAir5, ["iPad13,16", "iPad13,17"])]
+         (.iPadAir5, ["iPad13,16", "iPad13,17"]),
+         (.iPadAir11M2, ["iPad14,8", "iPad14,9"]),
+         (.iPadAir13M2, ["iPad14,10", "iPad14,11"]),
+         (.iPadAir11M3, ["iPad15,3", "iPad15,4"]),
+         (.iPadAir13M3, ["iPad15,5", "iPad15,6"]),
+         (.iPadAir11M4, ["iPad16,8", "iPad16,9"]),
+         (.iPadAir13M4, ["iPad16,10", "iPad16,11"])]
     }
 }
 
@@ -128,7 +145,8 @@ extension Device.iPadMini: DeviceFamily {
          (.iPadMini3, ["iPad4,7", "iPad4,8", "iPad4,9"]),
          (.iPadMini4, ["iPad5,1", "iPad5,2"]),
          (.iPadMini5, ["iPad11,1", "iPad11,2"]),
-         (.iPadMini6, ["iPad14,1", "iPad14,2"])]
+         (.iPadMini6, ["iPad14,1", "iPad14,2"]),
+         (.iPadMiniA17Pro, ["iPad16,1", "iPad16,2"])]
     }
 }
 
@@ -144,11 +162,12 @@ extension Device.iPadPro: DeviceFamily {
          (.iPadPro12Inch4, ["iPad8,11", "iPad8,12"]),
          (.iPadPro11Inch3, ["iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7"]),
          (.iPadPro12Inch5, ["iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11"]),
-         (.iPadPro11Inch4, ["iPad14,3", "iPad14,4"]),
-         (.iPadPro12Inch6, ["iPad14,5", "iPad14,6"]),
-         (.iPadPro11InchM2, ["iPad14,8", "iPad14,9"]),
-         (.iPadPro11InchM4, ["iPad16,3-A", "iPad16,3-B", "iPad16,4-A", "iPad16,4-B"]),
-         (.iPadPro13InchM4, ["iPad16,5-A", "iPad16,5-B", "iPad16,6-A", "iPad16,6-B"])]
+         (.iPadPro11Inch4, ["iPad14,3", "iPad14,4", "iPad14,3-A", "iPad14,3-B", "iPad14,4-A", "iPad14,4-B"]),
+         (.iPadPro12Inch6, ["iPad14,5", "iPad14,6", "iPad14,5-A", "iPad14,5-B", "iPad14,6-A", "iPad14,6-B"]),
+         (.iPadPro11InchM4, ["iPad16,3", "iPad16,4", "iPad16,3-A", "iPad16,3-B", "iPad16,4-A", "iPad16,4-B"]),
+         (.iPadPro13InchM4, ["iPad16,5", "iPad16,6", "iPad16,5-A", "iPad16,5-B", "iPad16,6-A", "iPad16,6-B"]),
+         (.iPadPro11InchM5, ["iPad17,1", "iPad17,2", "iPad17,1-A", "iPad17,1-B", "iPad17,2-A", "iPad17,2-B"]),
+         (.iPadPro13InchM5, ["iPad17,3", "iPad17,4", "iPad17,3-A", "iPad17,3-B", "iPad17,4-A", "iPad17,4-B"])]
     }
 }
 
