@@ -69,11 +69,16 @@ extension Device {
         case iPhone16           = "iPhone 16"
         case iPhone16Plus       = "iPhone 16 Plus"
         case iPhone16e          = "iPhone 16e"
+        /// iPhone 17e
+        case iPhone17e          = "iPhone 17e"
         /// iPhone 17
         case iPhone17Pro        = "iPhone 17 Pro"
         case iPhone17ProMax     = "iPhone 17 Pro Max"
         case iPhone17           = "iPhone 17"
         case iPhoneAir          = "iPhone Air"
+        /// iPhone 18 Pro
+        case iPhone18Pro        = "iPhone 18 Pro"
+        case iPhone18ProMax     = "iPhone 18 Pro Max"
     }
        
     

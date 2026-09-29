@@ -31,6 +31,19 @@ import Testing
         validate(.iPhone16Plus, identifiers: ["iPhone17,4"])
         validate(.iPhone16e, identifiers: ["iPhone17,5"])
     }
+
+    @Test func iPhone17() throws {
+        validate(.iPhone17Pro, identifiers: ["iPhone18,1"])
+        validate(.iPhone17ProMax, identifiers: ["iPhone18,2"])
+        validate(.iPhone17, identifiers: ["iPhone18,3"])
+        validate(.iPhoneAir, identifiers: ["iPhone18,4"])
+        validate(.iPhone17e, identifiers: ["iPhone18,5"])
+    }
+
+    @Test func iPhone18Pro() throws {
+        validate(.iPhone18Pro, identifiers: ["iPhone19,2"])
+        validate(.iPhone18ProMax, identifiers: ["iPhone19,3", "iPhone19,7"])
+    }
 }
 
 @Suite("iPad Pro model tests") struct iPadProFamilyTests {
