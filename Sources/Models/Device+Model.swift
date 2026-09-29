@@ -79,6 +79,8 @@ extension Device {
         /// iPhone 18 Pro
         case iPhone18Pro        = "iPhone 18 Pro"
         case iPhone18ProMax     = "iPhone 18 Pro Max"
+        /// Upcoming iPhone model listed by AppleDB
+        case iPhoneDuo          = "iPhone Duo"
     }
        
     
@@ -94,8 +96,9 @@ extension Device {
         case iPad6              = "iPad (6th generation)"
         case iPad7              = "iPad (7th generation)"
         case iPad8              = "iPad (8th generation)"
-        case iPad9              = "iPad (9th generationn)"
+        case iPad9              = "iPad (9th generation)"
         case iPad10             = "iPad (10th generation)"
+        case iPadA16            = "iPad (A16)"
     }
     
     /// https://support.apple.com/en-us/HT201471#ipadair
@@ -105,6 +108,12 @@ extension Device {
         case iPadAir3           = "iPad Air (3rd generation)"
         case iPadAir4           = "iPad Air (4th generation)"
         case iPadAir5           = "iPad Air (5th generation)"
+        case iPadAir11M2        = "iPad Air 11-inch (M2)"
+        case iPadAir13M2        = "iPad Air 13-inch (M2)"
+        case iPadAir11M3        = "iPad Air 11-inch (M3)"
+        case iPadAir13M3        = "iPad Air 13-inch (M3)"
+        case iPadAir11M4        = "iPad Air 11-inch (M4)"
+        case iPadAir13M4        = "iPad Air 13-inch (M4)"
     }
     
     // https://support.apple.com/en-us/HT201471#ipadmini
@@ -115,6 +124,7 @@ extension Device {
         case iPadMini4          = "iPad Mini 4"
         case iPadMini5          = "iPad mini (5th generation)"
         case iPadMini6          = "iPad mini (6th generation)"
+        case iPadMiniA17Pro     = "iPad mini (A17 Pro)"
     }
     
     /// https://support.apple.com/en-us/HT201471#ipadpro
@@ -134,6 +144,8 @@ extension Device {
         case iPadPro11InchM2    = "iPad Pro 11-inch (M2)"
         case iPadPro11InchM4    = "iPad Pro 11-inch (M4)"
         case iPadPro13InchM4    = "iPad Pro 13-inch (M4)"
+        case iPadPro11InchM5    = "iPad Pro 11-inch (M5)"
+        case iPadPro13InchM5    = "iPad Pro 13-inch (M5)"
     }
     
     
