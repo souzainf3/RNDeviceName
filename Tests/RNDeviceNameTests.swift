@@ -44,27 +44,55 @@ import Testing
         validate(.iPhone18Pro, identifiers: ["iPhone19,2"])
         validate(.iPhone18ProMax, identifiers: ["iPhone19,3", "iPhone19,7"])
     }
+
+    @Test func iPhoneDuo() throws {
+        validate(.iPhoneDuo, identifiers: ["iPhone19,4"])
+    }
 }
 
 @Suite("iPad Pro model tests") struct iPadProFamilyTests {
  
     @Test func iPadPro12Inch() throws {
-        validate(.iPadPro12Inch6, identifiers:  ["iPad14,5", "iPad14,6"])
+        validate(.iPadPro12Inch6, identifiers: ["iPad14,5", "iPad14,5-A", "iPad14,5-B",
+                                                "iPad14,6", "iPad14,6-A", "iPad14,6-B"])
     }
     
     @Test func iPadPro11Inch() throws {
-        validate(.iPadPro12Inch6, identifiers:  ["iPad14,5", "iPad14,6"])
-        validate(.iPadPro11InchM2, identifiers:  ["iPad14,8", "iPad14,9"])
+        validate(.iPadPro12Inch6, identifiers: ["iPad14,5", "iPad14,5-A", "iPad14,5-B",
+                                                "iPad14,6", "iPad14,6-A", "iPad14,6-B"])
+        validate(.iPadPro11InchM2, identifiers: ["iPad14,3", "iPad14,3-A", "iPad14,3-B",
+                                                  "iPad14,4", "iPad14,4-A", "iPad14,4-B"])
         validate(.iPadPro11InchM4, identifiers:  ["iPad16,3-A", "iPad16,3-B", "iPad16,4-A", "iPad16,4-B"])
         validate(.iPadPro13InchM4, identifiers:  ["iPad16,5-A", "iPad16,5-B", "iPad16,6-A", "iPad16,6-B"])
+        validate(.iPadPro11InchM5, identifiers: ["iPad17,1-A", "iPad17,1-B", "iPad17,2-A", "iPad17,2-B"])
     }
     
     @Test func iPadPro13Inch() throws {
-        validate(.iPadPro12Inch6, identifiers:  ["iPad14,5", "iPad14,6"])
+        validate(.iPadPro12Inch6, identifiers: ["iPad14,5", "iPad14,5-A", "iPad14,5-B",
+                                                "iPad14,6", "iPad14,6-A", "iPad14,6-B"])
         validate(.iPadPro13InchM4, identifiers:  ["iPad16,5-A", "iPad16,5-B", "iPad16,6-A", "iPad16,6-B"])
+        validate(.iPadPro13InchM5, identifiers: ["iPad17,3-A", "iPad17,3-B", "iPad17,4-A", "iPad17,4-B"])
     }
 }
 
+@Suite("Other iPad model tests") struct OtherIPadFamilyTests {
+    @Test func iPadA16() throws {
+        validate(.iPadA16, identifiers: ["iPad15,7", "iPad15,8"])
+    }
+
+    @Test func iPadAirM2M3M4() throws {
+        validate(.iPadAir11M2, identifiers: ["iPad14,8", "iPad14,9"])
+        validate(.iPadAir13M2, identifiers: ["iPad14,10", "iPad14,11"])
+        validate(.iPadAir11M3, identifiers: ["iPad15,3", "iPad15,4"])
+        validate(.iPadAir13M3, identifiers: ["iPad15,5", "iPad15,6"])
+        validate(.iPadAir11M4, identifiers: ["iPad16,8", "iPad16,9"])
+        validate(.iPadAir13M4, identifiers: ["iPad16,10", "iPad16,11"])
+    }
+
+    @Test func iPadMiniA17Pro() throws {
+        validate(.iPadMiniA17Pro, identifiers: ["iPad16,1", "iPad16,2"])
+    }
+}
 
 // MARK: - Test Helper
     
@@ -75,6 +103,30 @@ private func validate(_ device: Device.iPhone,
 }
 
 private func validate(_ device: Device.iPadPro,
+                      identifiers: [String],
+                      sourceLocation: SourceLocation = #_sourceLocation) {
+    validateDevice(device, identifiers: identifiers, sourceLocation: sourceLocation)
+}
+
+private func validate(_ device: Device.iPad,
+                      identifiers: [String],
+                      sourceLocation: SourceLocation = #_sourceLocation) {
+    validateDevice(device, identifiers: identifiers, sourceLocation: sourceLocation)
+}
+
+private func validate(_ device: Device.iPadAir,
+                      identifiers: [String],
+                      sourceLocation: SourceLocation = #_sourceLocation) {
+    validateDevice(device, identifiers: identifiers, sourceLocation: sourceLocation)
+}
+
+private func validate(_ device: Device.iPadMini,
+                      identifiers: [String],
+                      sourceLocation: SourceLocation = #_sourceLocation) {
+    validateDevice(device, identifiers: identifiers, sourceLocation: sourceLocation)
+}
+
+private func validate(_ device: Device.AppleTV,
                       identifiers: [String],
                       sourceLocation: SourceLocation = #_sourceLocation) {
     validateDevice(device, identifiers: identifiers, sourceLocation: sourceLocation)
