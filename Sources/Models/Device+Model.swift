@@ -141,7 +141,6 @@ extension Device {
         case iPadPro12Inch5     = "iPad Pro (12.9-inch) (5th generation)"
         case iPadPro11Inch4     = "iPad Pro (11-inch) (4th generation)"
         case iPadPro12Inch6     = "iPad Pro (12.9-inch) (6th generation)"
-        case iPadPro11InchM2    = "iPad Pro 11-inch (M2)"
         case iPadPro11InchM4    = "iPad Pro 11-inch (M4)"
         case iPadPro13InchM4    = "iPad Pro 13-inch (M4)"
         case iPadPro11InchM5    = "iPad Pro 11-inch (M5)"
