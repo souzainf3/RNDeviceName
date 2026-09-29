@@ -162,12 +162,12 @@ extension Device.iPadPro: DeviceFamily {
          (.iPadPro12Inch4, ["iPad8,11", "iPad8,12"]),
          (.iPadPro11Inch3, ["iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7"]),
          (.iPadPro12Inch5, ["iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11"]),
-         (.iPadPro11Inch4, ["iPad14,3-A", "iPad14,3-B", "iPad14,4-A", "iPad14,4-B"]),
-         (.iPadPro12Inch6, ["iPad14,5-A", "iPad14,5-B", "iPad14,6-A", "iPad14,6-B"]),
-         (.iPadPro11InchM4, ["iPad16,3-A", "iPad16,3-B", "iPad16,4-A", "iPad16,4-B"]),
-         (.iPadPro13InchM4, ["iPad16,5-A", "iPad16,5-B", "iPad16,6-A", "iPad16,6-B"]),
-         (.iPadPro11InchM5, ["iPad17,1-A", "iPad17,1-B", "iPad17,2-A", "iPad17,2-B"]),
-         (.iPadPro13InchM5, ["iPad17,3-A", "iPad17,3-B", "iPad17,4-A", "iPad17,4-B"])]
+         (.iPadPro11Inch4, ["iPad14,3", "iPad14,4", "iPad14,3-A", "iPad14,3-B", "iPad14,4-A", "iPad14,4-B"]),
+         (.iPadPro12Inch6, ["iPad14,5", "iPad14,6", "iPad14,5-A", "iPad14,5-B", "iPad14,6-A", "iPad14,6-B"]),
+         (.iPadPro11InchM4, ["iPad16,3", "iPad16,4", "iPad16,3-A", "iPad16,3-B", "iPad16,4-A", "iPad16,4-B"]),
+         (.iPadPro13InchM4, ["iPad16,5", "iPad16,6", "iPad16,5-A", "iPad16,5-B", "iPad16,6-A", "iPad16,6-B"]),
+         (.iPadPro11InchM5, ["iPad17,1", "iPad17,2", "iPad17,1-A", "iPad17,1-B", "iPad17,2-A", "iPad17,2-B"]),
+         (.iPadPro13InchM5, ["iPad17,3", "iPad17,4", "iPad17,3-A", "iPad17,3-B", "iPad17,4-A", "iPad17,4-B"])]
     }
 }
 

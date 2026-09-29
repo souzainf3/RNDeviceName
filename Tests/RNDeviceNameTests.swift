@@ -53,21 +53,21 @@ import Testing
 @Suite("iPad Pro model tests") struct iPadProFamilyTests {
  
     @Test func iPadPro12Inch() throws {
-        validate(.iPadPro12Inch6, identifiers: ["iPad14,5-A", "iPad14,5-B", "iPad14,6-A", "iPad14,6-B"])
+        validate(.iPadPro12Inch6, identifiers: ["iPad14,5", "iPad14,6", "iPad14,5-A", "iPad14,5-B", "iPad14,6-A", "iPad14,6-B"])
     }
     
     @Test func iPadPro11Inch() throws {
-        validate(.iPadPro12Inch6, identifiers: ["iPad14,5-A", "iPad14,5-B", "iPad14,6-A", "iPad14,6-B"])
-        validate(.iPadPro11Inch4, identifiers: ["iPad14,3-A", "iPad14,3-B", "iPad14,4-A", "iPad14,4-B"])
-        validate(.iPadPro11InchM4, identifiers:  ["iPad16,3-A", "iPad16,3-B", "iPad16,4-A", "iPad16,4-B"])
-        validate(.iPadPro13InchM4, identifiers:  ["iPad16,5-A", "iPad16,5-B", "iPad16,6-A", "iPad16,6-B"])
-        validate(.iPadPro11InchM5, identifiers: ["iPad17,1-A", "iPad17,1-B", "iPad17,2-A", "iPad17,2-B"])
+        validate(.iPadPro12Inch6, identifiers: ["iPad14,5", "iPad14,6", "iPad14,5-A", "iPad14,5-B", "iPad14,6-A", "iPad14,6-B"])
+        validate(.iPadPro11Inch4, identifiers: ["iPad14,3", "iPad14,4", "iPad14,3-A", "iPad14,3-B", "iPad14,4-A", "iPad14,4-B"])
+        validate(.iPadPro11InchM4, identifiers:  ["iPad16,3", "iPad16,4", "iPad16,3-A", "iPad16,3-B", "iPad16,4-A", "iPad16,4-B"])
+        validate(.iPadPro13InchM4, identifiers:  ["iPad16,5", "iPad16,6", "iPad16,5-A", "iPad16,5-B", "iPad16,6-A", "iPad16,6-B"])
+        validate(.iPadPro11InchM5, identifiers: ["iPad17,1", "iPad17,2", "iPad17,1-A", "iPad17,1-B", "iPad17,2-A", "iPad17,2-B"])
     }
     
     @Test func iPadPro13Inch() throws {
-        validate(.iPadPro12Inch6, identifiers: ["iPad14,5-A", "iPad14,5-B", "iPad14,6-A", "iPad14,6-B"])
-        validate(.iPadPro13InchM4, identifiers:  ["iPad16,5-A", "iPad16,5-B", "iPad16,6-A", "iPad16,6-B"])
-        validate(.iPadPro13InchM5, identifiers: ["iPad17,3-A", "iPad17,3-B", "iPad17,4-A", "iPad17,4-B"])
+        validate(.iPadPro12Inch6, identifiers: ["iPad14,5", "iPad14,6", "iPad14,5-A", "iPad14,5-B", "iPad14,6-A", "iPad14,6-B"])
+        validate(.iPadPro13InchM4, identifiers:  ["iPad16,5", "iPad16,6", "iPad16,5-A", "iPad16,5-B", "iPad16,6-A", "iPad16,6-B"])
+        validate(.iPadPro13InchM5, identifiers: ["iPad17,3", "iPad17,4", "iPad17,3-A", "iPad17,3-B", "iPad17,4-A", "iPad17,4-B"])
     }
 }
 
