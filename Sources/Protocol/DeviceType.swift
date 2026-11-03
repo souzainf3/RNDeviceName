@@ -6,10 +6,14 @@
 
 import Foundation
 
-protocol DeviceType: Equatable {
+public protocol DeviceType: Equatable {
     var marketingName: String { get }
 }
 
-extension DeviceType where Self: RawRepresentable, Self.RawValue == String {
+public extension DeviceType where Self: RawRepresentable, Self.RawValue == String {
     var marketingName: String { return self.rawValue }
+}
+
+public func == (lhs: any DeviceType, rhs: any DeviceType) -> Bool {
+    return lhs.marketingName == rhs.marketingName
 }

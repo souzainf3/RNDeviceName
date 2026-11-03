@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Device {
+public extension Device {
 
     // MARK: - iPod
     
@@ -168,7 +168,7 @@ extension Device {
         case simulator
         case unknown(String)
         
-        var marketingName: String {
+        public var marketingName: String {
             switch self {
             case .simulator:
                 return "Simulator"
@@ -177,7 +177,7 @@ extension Device {
             }
         }
         
-        static func == (lhs: Default, rhs: Default) -> Bool {
+        public static func == (lhs: Default, rhs: Default) -> Bool {
             return lhs.marketingName == rhs.marketingName
         }
     }

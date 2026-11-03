@@ -88,6 +88,15 @@ import Testing
     @Test func iPadMiniA17Pro() throws {
         validate(.iPadMiniA17Pro, identifiers: ["iPad16,1", "iPad16,2"])
     }
+    
+    
+    @Test func test_Modeltype() throws {        
+        let iPadMiniA17Pro = Device(identifier: "iPad16,1") /// iPadMiniA17Pro
+        #expect(iPadMiniA17Pro.model == Device.iPadMini.iPadMiniA17Pro)
+        
+        let iPhoneDuo = Device(identifier: "iPhone19,4")
+        #expect(iPhoneDuo.model == Device.iPhone.iPhoneDuo)
+    }
 }
 
 // MARK: - Test Helper

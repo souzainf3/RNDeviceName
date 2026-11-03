@@ -19,7 +19,7 @@ public struct Device {
     /// Gets the marketing name from device, such as "iPhone 13 mini".
     public var marketingName: String { self.model.marketingName }
     
-    private var model: any DeviceType {
+    public var model: any DeviceType {
         return self.deviceFromIdentifier(self.identifier)
     }
 }
